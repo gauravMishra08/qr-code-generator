@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1117;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Wrapper {
+  background: linear-gradient(145deg, #161b22, #1b1f27); /* Soft 3D effect */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  gap: 20px;
+  width: fit-content;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(255, 107, 107, 0.3); 
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px; 
+    margin: 0 auto; 
+    background-color: #161b22; 
+    border-radius: 5px; 
+  }
+  
+  #myimg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+.qrgeneratorwrapper {
+  width: 300px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.qr {
+  font-family: "Lexend", sans-serif;
+  color: #f8fafc;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+
+#myimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#url {
+  border: 2px solid #5eead4;
+  height: 40px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: #161b22;
+  color: #f8fafc;
+}
+
+.Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.gen_reset_btn,
+.download_btn {
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+  font-weight: 500;
+}
+
+#button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#button:hover {
+  background-color: #ff477e;
+  box-shadow: 0 0 10px rgba(255, 71, 126, 0.8);
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  .Wrapper {
+    padding: 20px;
+  }
+}
